@@ -1,0 +1,44 @@
+Variable,Category,Customer_Count,Churn_Count,Churn_Rate_%,Retention_Rate_%,Pct_of_Total_Churn_%
+PaymentMethod,Electronic check,2365,1071,45.29,54.71,57.3
+Contract,Month-to-month,3875,1655,42.71,57.29,88.55
+InternetService,Fiber optic,3096,1297,41.89,58.11,69.4
+OnlineSecurity,No,3498,1461,41.77,58.23,78.17
+SeniorCitizen,Yes,1142,476,41.68,58.32,25.47
+TechSupport,No,3473,1446,41.64,58.36,77.37
+OnlineBackup,No,3088,1233,39.93,60.07,65.97
+DeviceProtection,No,3095,1211,39.13,60.87,64.79
+StreamingMovies,No,2785,938,33.68,66.32,50.19
+PaperlessBilling,Yes,4171,1400,33.57,66.43,74.91
+StreamingTV,No,2810,942,33.52,66.48,50.4
+Partner,No,3641,1200,32.96,67.04,64.21
+Dependents,No,4933,1543,31.28,68.72,82.56
+StreamingTV,Yes,2707,814,30.07,69.93,43.55
+StreamingMovies,Yes,2732,818,29.94,70.06,43.77
+MultipleLines,Yes,2971,850,28.61,71.39,45.48
+gender,Female,3488,939,26.92,73.08,50.24
+PhoneService,Yes,6361,1699,26.71,73.29,90.9
+gender,Male,3555,930,26.16,73.84,49.76
+MultipleLines,No,3390,849,25.04,74.96,45.43
+MultipleLines,No phone service,682,170,24.93,75.07,9.1
+PhoneService,No,682,170,24.93,75.07,9.1
+SeniorCitizen,No,5901,1393,23.61,76.39,74.53
+DeviceProtection,Yes,2422,545,22.5,77.5,29.16
+OnlineBackup,Yes,2429,523,21.53,78.47,27.98
+Partner,Yes,3402,669,19.66,80.34,35.79
+PaymentMethod,Mailed check,1612,308,19.11,80.89,16.48
+InternetService,DSL,2421,459,18.96,81.04,24.56
+PaymentMethod,Bank transfer (automatic),1544,258,16.71,83.29,13.8
+PaperlessBilling,No,2872,469,16.33,83.67,25.09
+Dependents,Yes,2110,326,15.45,84.55,17.44
+PaymentMethod,Credit card (automatic),1522,232,15.24,84.76,12.41
+TechSupport,Yes,2044,310,15.17,84.83,16.59
+OnlineSecurity,Yes,2019,295,14.61,85.39,15.78
+Contract,One year,1473,166,11.27,88.73,8.88
+TechSupport,No internet service,1526,113,7.4,92.6,6.05
+DeviceProtection,No internet service,1526,113,7.4,92.6,6.05
+OnlineBackup,No internet service,1526,113,7.4,92.6,6.05
+OnlineSecurity,No internet service,1526,113,7.4,92.6,6.05
+InternetService,No,1526,113,7.4,92.6,6.05
+StreamingTV,No internet service,1526,113,7.4,92.6,6.05
+StreamingMovies,No internet service,1526,113,7.4,92.6,6.05
+Contract,Two year,1695,48,2.83,97.17,2.57

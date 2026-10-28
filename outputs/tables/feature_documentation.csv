@@ -1,0 +1,11 @@
+Feature,Description
+TenureGroup,Customer lifecycle stage bucketed from tenure (months). Used to study whether churn risk concentrates in early-life customers (onboarding risk) vs. long-tenure customers (loyalty erosion).
+NumberOfServices,"Count of active services/add-ons per customer (Phone, MultipleLines, Internet [any type], OnlineSecurity, OnlineBackup, DeviceProtection, TechSupport, StreamingTV, StreamingMovies). Range 0-9. Proxy for how 'embedded' / bundled a customer is with the provider."
+ServiceBundleSize,"Count of the 6 optional add-on services subscribed (Online Security, Online Backup, Device Protection, Tech Support, Streaming TV, Streaming Movies). Range 0-6. Distinct from NumberOfServices, which also counts the base Phone/Internet subscription."
+AverageChargePerMonth,TotalCharges / tenure (fallback to current MonthlyCharges for brand-new tenure=0 customers). Smooths historical rate changes into a single lifetime-average monthly spend figure.
+HighMonthlyCharge,Flag for customers in the top quartile of MonthlyCharges (>= 89.85). Used to isolate premium-paying customers for revenue-risk analysis.
+LongTermCustomer,Flag for tenure >= 24 months (2 years). Splits the base into established vs. newer relationships.
+HighValueCustomer,Flag for customers in the top quartile of cumulative TotalCharges (>= 3786.60) — a simple lifetime-value proxy combining tenure and spend level.
+ContractRisk,"Qualitative churn-risk tier derived directly from Contract type, based on observed churn-rate ordering (Month-to-month=High, One year=Medium, Two year=Low). Established empirically in the churn analysis, not assumed."
+PaymentRisk,"Qualitative churn-risk tier derived from PaymentMethod, based on observed churn-rate ordering (Electronic check historically shows the highest churn; automatic payments the lowest — automation likely reduces passive/frictional churn from failed manual payments)."
+CLV_realized,Simple realized Customer Lifetime Value proxy = TotalCharges to date (actual cumulative revenue collected). ASSUMPTION: does not discount cash flows or net out service costs; it is a revenue-side proxy only.

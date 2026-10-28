@@ -1,0 +1,8 @@
+Priority_Rank,Segment,Customer_Count,Pct_of_Customer_Base_%,Churn_Rate_%,Avg_Tenure_Months,Avg_MonthlyCharges,Avg_TotalCharges,Segment_Total_MRR,Pct_of_Total_MRR_%,MRR_At_Risk_from_Churned_in_Segment
+1,Month-to-Month Risk Customers,3875,55.02,42.71,18.0,66.4,1369.25,257294.15,56.41,120847.1
+2,Fiber-Optic High-Risk Customers,2128,30.21,54.61,21.6,87.02,1969.71,185181.1,40.6,100482.0
+3,New High-Risk Customers,1994,28.31,51.35,4.5,58.22,276.69,116086.5,25.45,68301.45
+4,Low-Value Churn Risk,1821,25.86,31.58,12.7,42.18,571.77,76804.65,16.84,26024.95
+5,High-Value Loyal Customers,1761,25.0,14.48,61.3,93.5,5715.99,164658.75,36.1,25338.1
+6,High-Value Churn Risk,395,5.61,32.66,53.7,95.88,5144.97,37871.75,8.3,12649.25
+7,Loyal Long-Term Customers,1946,27.63,6.68,63.6,71.52,4590.85,139181.45,30.51,12106.05

@@ -1,0 +1,9 @@
+Combination,Customer_Count,Pct_of_Base_%,Churn_Rate_%,Avg_MonthlyCharges
+Month-to-month + Fiber optic + Electronic check,1307,18.56,60.37,87.18
+Month-to-month + No online security + Fiber optic,1774,25.19,58.12,85.96
+New customer (tenure<=6mo) + Month-to-month,1413,20.06,55.2,55.88
+Month-to-month + Fiber optic,2128,30.21,54.61,87.02
+Month-to-month + Electronic check,1850,26.27,53.73,74.99
+High MonthlyCharge (top quartile) + Month-to-month,877,12.45,52.0,98.3
+Month-to-month + Paperless billing,2586,36.72,48.3,72.7
+Two year + Automatic payment (bank/credit),1145,16.26,2.79,64.71

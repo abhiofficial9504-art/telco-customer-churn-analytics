@@ -1,0 +1,29 @@
+Section,Metric,Value
+Overall,Total Customers,7043.0
+Overall,Churned Customers,1869.0
+Overall,Churn Rate (%),26.54
+Overall,Retention Rate (%),73.46
+Top Risk Category: PaymentMethod,Electronic check — Churn Rate (%),45.29
+Top Risk Category: Contract,Month-to-month — Churn Rate (%),42.71
+Top Risk Category: InternetService,Fiber optic — Churn Rate (%),41.89
+Top Risk Category: OnlineSecurity,No — Churn Rate (%),41.77
+Top Risk Category: SeniorCitizen,Yes — Churn Rate (%),41.68
+Top Risk Category: TechSupport,No — Churn Rate (%),41.64
+Top Risk Category: OnlineBackup,No — Churn Rate (%),39.93
+Top Risk Category: DeviceProtection,No — Churn Rate (%),39.13
+Top Risk Category: StreamingMovies,No — Churn Rate (%),33.68
+Top Risk Category: PaperlessBilling,Yes — Churn Rate (%),33.57
+Tenure Band,0-6 months — Churn Rate (%),52.94
+Tenure Band,7-12 months — Churn Rate (%),35.89
+Tenure Band,13-24 months — Churn Rate (%),28.71
+Tenure Band,25-36 months — Churn Rate (%),21.63
+Tenure Band,37-48 months — Churn Rate (%),19.03
+Tenure Band,49-60 months — Churn Rate (%),14.42
+Tenure Band,61+ months — Churn Rate (%),6.61
+Contract,Month-to-month — Churn Rate (%),42.71
+Contract,One year — Churn Rate (%),11.27
+Contract,Two year — Churn Rate (%),2.83
+Payment Method,Electronic check — Churn Rate (%),45.29
+Payment Method,Mailed check — Churn Rate (%),19.11
+Payment Method,Bank transfer (automatic) — Churn Rate (%),16.71
+Payment Method,Credit card (automatic) — Churn Rate (%),15.24

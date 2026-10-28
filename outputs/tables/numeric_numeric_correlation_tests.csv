@@ -1,0 +1,4 @@
+Pair,Pearson r,Pearson p,Spearman rho,Spearman p
+tenure vs MonthlyCharges,0.248,4.094044991496803e-99,0.276,1.0271266876409566e-123
+tenure vs TotalCharges,0.826,0.0,0.89,0.0
+MonthlyCharges vs TotalCharges,0.651,0.0,0.638,0.0

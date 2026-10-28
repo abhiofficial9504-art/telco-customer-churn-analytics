@@ -1,0 +1,9 @@
+Variable,Category,Customer_Count,Churn_Count,Churn_Rate_%,Retention_Rate_%,Pct_of_Total_Churn_%
+MonthlyCharges,Q1 (lowest),1762,198,11.24,88.76,10.59
+MonthlyCharges,Q2,1766,434,24.58,75.42,23.22
+MonthlyCharges,Q3,1757,659,37.51,62.49,35.26
+MonthlyCharges,Q4 (highest),1758,578,32.88,67.12,30.93
+TotalCharges,Q1 (lowest),1762,762,43.25,56.75,40.77
+TotalCharges,Q2,1760,447,25.4,74.6,23.92
+TotalCharges,Q3,1760,405,23.01,76.99,21.67
+TotalCharges,Q4 (highest),1761,255,14.48,85.52,13.64

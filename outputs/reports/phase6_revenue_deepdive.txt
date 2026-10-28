@@ -1,0 +1,5 @@
+High-value churners (top-quartile TotalCharges & churned): 255
+  -> their combined lost MRR: 48965.05
+Long-tenure churners (tenure>=24mo & churned): 561
+Churn rate among HighMonthlyCharge customers (top quartile): 32.75
+Revenue concentration: % of MRR from top 25% of customers by MonthlyCharges: 38.93

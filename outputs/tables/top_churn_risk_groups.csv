@@ -1,0 +1,11 @@
+Variable,Category,Customer_Count,Churn_Count,Churn_Rate_%,Retention_Rate_%,Pct_of_Total_Churn_%
+PaymentMethod,Electronic check,2365,1071,45.29,54.71,57.3
+Contract,Month-to-month,3875,1655,42.71,57.29,88.55
+InternetService,Fiber optic,3096,1297,41.89,58.11,69.4
+OnlineSecurity,No,3498,1461,41.77,58.23,78.17
+SeniorCitizen,Yes,1142,476,41.68,58.32,25.47
+TechSupport,No,3473,1446,41.64,58.36,77.37
+OnlineBackup,No,3088,1233,39.93,60.07,65.97
+DeviceProtection,No,3095,1211,39.13,60.87,64.79
+StreamingMovies,No,2785,938,33.68,66.32,50.19
+PaperlessBilling,Yes,4171,1400,33.57,66.43,74.91

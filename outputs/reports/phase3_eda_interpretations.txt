@@ -1,0 +1,13 @@
+Tenure distribution (skewness=0.24) is close to a bimodal/uniform-ish shape spanning 0-72 months with a spike at very low tenure — a large group of recently-acquired customers coexists with a substantial base of long-tenured (5-6 year) customers. This bimodality is a strong early signal that acquisition and retention dynamics may differ sharply by lifecycle stage.
+
+MonthlyCharges (skewness=-0.22) is roughly symmetric with a slight left lean, driven by a visible cluster near the low end (~$20, single-service/no-internet customers) and a broad hump in the $70-$110 range (fiber + add-on bundles) — the market is effectively two customer populations at different price points, not one continuum.
+
+TotalCharges (skewness=0.96) is strongly right-skewed, as expected for a cumulative billing variable — most customers have low cumulative spend (short tenure), while a smaller group of long-tenured customers has accumulated very high lifetime billing.
+
+InternetService: Fiber optic is the single largest segment (44.0% of customers), ahead of DSL (34.4%) — fiber pricing/quality will disproportionately shape overall churn and revenue dynamics.
+
+Contract: Month-to-month is the dominant contract type (55.0% of the base) versus only 24.1% on two-year contracts — the customer base skews heavily toward the most flexible (and, as later analysis shows, the highest-churn-risk) commitment tier.
+
+PaymentMethod: Electronic check is the most common method (33.6%), notably more common than either automatic payment method — a meaningful share of the base is on a manual, non-automated billing method, which (per churn analysis) correlates with higher churn.
+
+SeniorCitizen: Only 16.2% of customers are senior citizens — a small but (per churn analysis) disproportionately high-risk subgroup worth targeted attention despite its small size.

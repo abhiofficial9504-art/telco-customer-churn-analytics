@@ -1,0 +1,190 @@
+================================================================================
+PHASE 1 — DATASET UNDERSTANDING
+================================================================================
+
+[1] Dataset shape: 7043 rows x 21 columns
+
+[2] Column names (21):
+['customerID', 'gender', 'SeniorCitizen', 'Partner', 'Dependents', 'tenure', 'PhoneService', 'MultipleLines', 'InternetService', 'OnlineSecurity', 'OnlineBackup', 'DeviceProtection', 'TechSupport', 'StreamingTV', 'StreamingMovies', 'Contract', 'PaperlessBilling', 'PaymentMethod', 'MonthlyCharges', 'TotalCharges', 'Churn']
+  Missing expected columns: None
+  Unexpected extra columns: None
+
+[3] Data types (native pandas inference on raw CSV):
+customerID              str
+gender                  str
+SeniorCitizen         int64
+Partner                 str
+Dependents              str
+tenure                int64
+PhoneService            str
+MultipleLines           str
+InternetService         str
+OnlineSecurity          str
+OnlineBackup            str
+DeviceProtection        str
+TechSupport             str
+StreamingTV             str
+StreamingMovies         str
+Contract                str
+PaperlessBilling        str
+PaymentMethod           str
+MonthlyCharges      float64
+TotalCharges            str
+Churn                   str
+
+[4] First 3 rows:
+   customerID  gender SeniorCitizen Partner Dependents tenure PhoneService     MultipleLines InternetService OnlineSecurity OnlineBackup DeviceProtection TechSupport StreamingTV StreamingMovies        Contract PaperlessBilling     PaymentMethod MonthlyCharges TotalCharges Churn
+0  7590-VHVEG  Female             0     Yes         No      1           No  No phone service             DSL             No          Yes               No          No          No              No  Month-to-month              Yes  Electronic check          29.85        29.85    No
+1  5575-GNVDE    Male             0      No         No     34          Yes                No             DSL            Yes           No              Yes          No          No              No        One year               No      Mailed check          56.95       1889.5    No
+2  3668-QPYBK    Male             0      No         No      2          Yes                No             DSL            Yes          Yes               No          No          No              No  Month-to-month              Yes      Mailed check          53.85       108.15   Yes
+
+    Last 3 rows:
+      customerID  gender SeniorCitizen Partner Dependents tenure PhoneService     MultipleLines InternetService OnlineSecurity OnlineBackup DeviceProtection TechSupport StreamingTV StreamingMovies        Contract PaperlessBilling              PaymentMethod MonthlyCharges TotalCharges Churn
+7040  4801-JZAZL  Female             0     Yes        Yes     11           No  No phone service             DSL            Yes           No               No          No          No              No  Month-to-month              Yes           Electronic check           29.6       346.45    No
+7041  8361-LTMKD    Male             1     Yes         No      4          Yes               Yes     Fiber optic             No           No               No          No          No              No  Month-to-month              Yes               Mailed check           74.4        306.6   Yes
+7042  3186-AJIEK    Male             0      No         No     66          Yes                No     Fiber optic            Yes           No              Yes         Yes         Yes             Yes        Two year              Yes  Bank transfer (automatic)         105.65       6844.5    No
+
+[5] Random sample (5 rows, random_state=42):
+      customerID  gender SeniorCitizen Partner Dependents tenure PhoneService     MultipleLines InternetService       OnlineSecurity         OnlineBackup     DeviceProtection          TechSupport          StreamingTV      StreamingMovies        Contract PaperlessBilling              PaymentMethod MonthlyCharges TotalCharges Churn
+185   1024-GUALD  Female             0     Yes         No      1           No  No phone service             DSL                   No                   No                   No                   No                   No                   No  Month-to-month              Yes           Electronic check           24.8         24.8   Yes
+2715  0484-JPBRU    Male             0      No         No     41          Yes               Yes              No  No internet service  No internet service  No internet service  No internet service  No internet service  No internet service  Month-to-month              Yes  Bank transfer (automatic)          25.25       996.45    No
+3825  3620-EHIMZ  Female             0     Yes        Yes     52          Yes                No              No  No internet service  No internet service  No internet service  No internet service  No internet service  No internet service        Two year               No               Mailed check          19.35       1031.7    No
+1807  6910-HADCM  Female             0      No         No      1          Yes                No     Fiber optic                   No                   No                  Yes                   No                   No                   No  Month-to-month               No           Electronic check          76.35        76.35   Yes
+132   8587-XYZSF    Male             0      No         No     67          Yes                No             DSL                   No                   No                   No                  Yes                   No                   No        Two year               No  Bank transfer (automatic)          50.55       3260.1    No
+
+[6] Unique values per categorical column:
+  gender (2): ['Female', 'Male']
+  SeniorCitizen (2): ['0', '1']
+  Partner (2): ['No', 'Yes']
+  Dependents (2): ['No', 'Yes']
+  PhoneService (2): ['No', 'Yes']
+  MultipleLines (3): ['No', 'No phone service', 'Yes']
+  InternetService (3): ['DSL', 'Fiber optic', 'No']
+  OnlineSecurity (3): ['No', 'No internet service', 'Yes']
+  OnlineBackup (3): ['No', 'No internet service', 'Yes']
+  DeviceProtection (3): ['No', 'No internet service', 'Yes']
+  TechSupport (3): ['No', 'No internet service', 'Yes']
+  StreamingTV (3): ['No', 'No internet service', 'Yes']
+  StreamingMovies (3): ['No', 'No internet service', 'Yes']
+  Contract (3): ['Month-to-month', 'One year', 'Two year']
+  PaperlessBilling (2): ['No', 'Yes']
+  PaymentMethod (4): ['Bank transfer (automatic)', 'Credit card (automatic)', 'Electronic check', 'Mailed check']
+  Churn (2): ['No', 'Yes']
+
+[7] Numerical variable distributions (coerced view only):
+  tenure:
+count    7043.000000
+mean       32.371149
+std        24.559481
+min         0.000000
+25%         9.000000
+50%        29.000000
+75%        55.000000
+max        72.000000
+    Non-numeric-but-non-null entries in raw column: 0
+  MonthlyCharges:
+count    7043.000000
+mean       64.761692
+std        30.090047
+min        18.250000
+25%        35.500000
+50%        70.350000
+75%        89.850000
+max       118.750000
+    Non-numeric-but-non-null entries in raw column: 0
+  TotalCharges:
+count    7032.000000
+mean     2283.300441
+std      2266.771362
+min        18.800000
+25%       401.450000
+50%      1397.475000
+75%      3794.737500
+max      8684.800000
+    Non-numeric-but-non-null entries in raw column: 11
+
+[8] Missing values (NaN) per column:
+customerID          0
+gender              0
+SeniorCitizen       0
+Partner             0
+Dependents          0
+tenure              0
+PhoneService        0
+MultipleLines       0
+InternetService     0
+OnlineSecurity      0
+OnlineBackup        0
+DeviceProtection    0
+TechSupport         0
+StreamingTV         0
+StreamingMovies     0
+Contract            0
+PaperlessBilling    0
+PaymentMethod       0
+MonthlyCharges      0
+TotalCharges        0
+Churn               0
+
+[9] Blank / whitespace-only string values per column:
+  None found.
+
+[10] Fully duplicated rows: 0
+
+[11] Duplicate customerID values: 0
+
+[12] Constant / near-constant columns (>=99% single value):
+  None found.
+
+[13-15] Invalid / suspicious values & data-entry inconsistency checks:
+  SeniorCitizen values OK: ['0', '1'] (note: encoded as 0/1 int, inconsistent with Yes/No style used by Partner/Dependents/etc. — a labeling inconsistency worth flagging)
+  tenure range: 0 to 72 (negative values: 0)
+  MonthlyCharges range: 18.25 to 118.75 (<=0 values: 0)
+  TotalCharges dtype as loaded: str -> numeric
+  TotalCharges blank-string count: 11
+  TotalCharges values that fail numeric coercion (excluding true NaN): 11
+  PhoneService=No but MultipleLines not 'No phone service': 0 rows
+
+
+  Zero-tenure customers: 11
+    Of these, TotalCharges blank/non-numeric: 11
+
+[16] Outlier scan (IQR method, 1.5x fences) on numeric columns:
+  tenure: fences=(-60.00, 124.00), outliers=0 (0.00%)
+  MonthlyCharges: fences=(-46.02, 171.38), outliers=0 (0.00%)
+  TotalCharges: fences=(-4688.48, 8884.67), outliers=0 (0.00%)
+
+[17] Cardinality of categorical/ID columns:
+  customerID: 7043 unique values
+  gender: 2 unique values
+  SeniorCitizen: 2 unique values
+  Partner: 2 unique values
+  Dependents: 2 unique values
+  tenure: 73 unique values
+  PhoneService: 2 unique values
+  MultipleLines: 3 unique values
+  InternetService: 3 unique values
+  OnlineSecurity: 3 unique values
+  OnlineBackup: 3 unique values
+  DeviceProtection: 3 unique values
+  TechSupport: 3 unique values
+  StreamingTV: 3 unique values
+  StreamingMovies: 3 unique values
+  Contract: 3 unique values
+  PaperlessBilling: 2 unique values
+  PaymentMethod: 4 unique values
+  MonthlyCharges: 1585 unique values
+  TotalCharges: 6531 unique values
+  Churn: 2 unique values
+
+[18] Memory usage (raw, as string dtype): 9036.0 KB (8.824 MB)
+     Memory usage (native pandas inference): 7975.1 KB
+
+[19] Target variable (Churn) distribution:
+Churn
+No     5174
+Yes    1869
+Churn
+No     73.46%
+Yes    26.54%
+  Class imbalance ratio (majority:minority): 2.77 : 1

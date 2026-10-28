@@ -1,0 +1,44 @@
+Feature,LogReg_Coefficient,Direction
+tenure,-1.14654038700612,Decreases Churn Risk (Retention)
+Contract_Two year,-0.7624806521464402,Decreases Churn Risk (Retention)
+MonthlyCharges,-0.7059092326510931,Decreases Churn Risk (Retention)
+InternetService_DSL,-0.665507449878384,Decreases Churn Risk (Retention)
+InternetService_Fiber optic,0.6412690901203468,Increases Churn Risk
+Contract_Month-to-month,0.6114090405244728,Increases Churn Risk
+TotalCharges,0.5031041981411742,Increases Churn Risk
+PaperlessBilling_Yes,0.37073041069379153,Increases Churn Risk
+NumberOfServices,0.27648371362874874,Increases Churn Risk
+OnlineSecurity_Yes,-0.255731293417102,Decreases Churn Risk (Retention)
+OnlineBackup_No internet service,-0.2461705999503984,Decreases Churn Risk (Retention)
+TechSupport_No internet service,-0.2461705999503984,Decreases Churn Risk (Retention)
+DeviceProtection_No internet service,-0.2461705999503984,Decreases Churn Risk (Retention)
+StreamingTV_No internet service,-0.2461705999503984,Decreases Churn Risk (Retention)
+StreamingMovies_No internet service,-0.2461705999503984,Decreases Churn Risk (Retention)
+OnlineSecurity_No internet service,-0.2461705999503984,Decreases Churn Risk (Retention)
+InternetService_No,-0.2461705999503984,Decreases Churn Risk (Retention)
+OnlineSecurity_No,0.23149293365907658,Increases Churn Risk
+Dependents_Yes,-0.22849014984563995,Decreases Churn Risk (Retention)
+TechSupport_Yes,-0.22485914289634606,Decreases Churn Risk (Retention)
+TechSupport_No,0.20062078313830675,Increases Churn Risk
+SeniorCitizen_Yes,0.19387048742630028,Increases Churn Risk
+PaymentMethod_Electronic check,0.18874251373110676,Increases Churn Risk
+StreamingMovies_No,-0.1790993865137075,Decreases Churn Risk (Retention)
+PaymentMethod_Bank transfer (automatic),-0.17906583568690917,Decreases Churn Risk (Retention)
+PaymentMethod_Credit card (automatic),-0.16723022311713856,Decreases Churn Risk (Retention)
+MultipleLines_No,-0.16353943966343779,Decreases Churn Risk (Retention)
+MultipleLines_No phone service,-0.1627905272070331,Decreases Churn Risk (Retention)
+StreamingMovies_Yes,0.15486102675568106,Increases Churn Risk
+StreamingTV_No,-0.13542029121351778,Decreases Churn Risk (Retention)
+OnlineBackup_Yes,-0.12918245466005382,Decreases Churn Risk (Retention)
+Contract_One year,-0.11933734808645464,Decreases Churn Risk (Retention)
+PaymentMethod_Mailed check,-0.1128554146354743,Decreases Churn Risk (Retention)
+StreamingTV_Yes,0.11118193145547732,Increases Churn Risk
+PhoneService_Yes,-0.10761843250139662,Decreases Churn Risk (Retention)
+OnlineBackup_No,0.1049440949020236,Increases Churn Risk
+ServiceBundleSize,0.08046441858122373,Increases Churn Risk
+DeviceProtection_Yes,-0.0631887251362616,Decreases Churn Risk (Retention)
+MultipleLines_Yes,0.05592100716205036,Increases Churn Risk
+DeviceProtection_No,0.038950365378234,Increases Churn Risk
+gender_Male,0.018334164060976793,Increases Churn Risk
+AverageChargePerMonth,0.015729992787184302,Increases Churn Risk
+Partner_Yes,-0.01251907849628011,Decreases Churn Risk (Retention)

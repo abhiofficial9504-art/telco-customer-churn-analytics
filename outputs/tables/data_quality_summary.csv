@@ -1,0 +1,22 @@
+Column,Data Type,Missing Count,Missing %,Unique Values,Minimum,Maximum,Mean,Median,Std Dev,Potential Issue,Recommended Treatment
+customerID,str,0,0.0,7043,,,,,,"High-cardinality identifier, not predictive",Exclude from modeling features; retain only as a join/lookup key
+gender,str,0,0.0,2,,,,,,None identified,No action needed
+SeniorCitizen,str,0,0.0,2,0.0,1.0,0.16,0.0,0.37,Encoded as 0/1 integer while similar Yes/No columns use strings,Optionally map to 'Yes'/'No' for labeling consistency in charts
+Partner,str,0,0.0,2,,,,,,None identified,No action needed
+Dependents,str,0,0.0,2,,,,,,None identified,No action needed
+tenure,str,0,0.0,73,0.0,72.0,32.37,29.0,24.56,None identified,No action needed
+PhoneService,str,0,0.0,2,,,,,,None identified,No action needed
+MultipleLines,str,0,0.0,3,,,,,,None identified,No action needed
+InternetService,str,0,0.0,3,,,,,,None identified,No action needed
+OnlineSecurity,str,0,0.0,3,,,,,,None identified,No action needed
+OnlineBackup,str,0,0.0,3,,,,,,None identified,No action needed
+DeviceProtection,str,0,0.0,3,,,,,,None identified,No action needed
+TechSupport,str,0,0.0,3,,,,,,None identified,No action needed
+StreamingTV,str,0,0.0,3,,,,,,None identified,No action needed
+StreamingMovies,str,0,0.0,3,,,,,,None identified,No action needed
+Contract,str,0,0.0,3,,,,,,None identified,No action needed
+PaperlessBilling,str,0,0.0,2,,,,,,None identified,No action needed
+PaymentMethod,str,0,0.0,4,,,,,,None identified,No action needed
+MonthlyCharges,str,0,0.0,1585,18.25,118.75,64.76,70.35,30.09,None identified,No action needed
+TotalCharges,object (should be float64),0,0.0,6531,18.8,8684.8,2283.3,1397.48,2266.77,Stored as text; 11 blank strings for zero-tenure new customers,Convert to numeric with pd.to_numeric(errors='coerce'); impute blanks as 0 (no billing occurred yet) or MonthlyCharges*tenure
+Churn,str,0,0.0,2,,,,,,None identified,No action needed

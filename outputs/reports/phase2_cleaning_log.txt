@@ -1,0 +1,23 @@
+================================================================================
+PHASE 2 — DATA CLEANING LOG
+================================================================================
+1. Stripped leading/trailing whitespace from all text columns; restored true NaN where astype(str) had converted it to the literal string 'nan'.
+2. Converted blank strings to NaN. Columns affected: {'TotalCharges': 11}
+3. No fully duplicated rows found — nothing removed.
+4. No duplicate customerID values found.
+5. Standardized SeniorCitizen: kept original 0/1 as 'SeniorCitizen_Flag' (numeric, for modeling) and relabeled 'SeniorCitizen' itself to 'Yes'/'No' for consistency with Partner/Dependents/etc.
+6. Converted 'tenure' to numeric (float, later safe-cast to int where non-null).
+7. Converted 'MonthlyCharges' to numeric (float64).
+8. TotalCharges was stored as text (dtype was str) due to 11 blank string values (now NaN after numeric coercion). Diagnosis: 11 of these 11 missing values correspond exactly to customers with tenure=0 (brand-new customers who have not yet been billed a full cycle) — this is the root cause, not random data corruption.
+   -> Imputed TotalCharges = 0.0 for the 11 zero-tenure customers (consistent with 'no billing cycle completed'). This is a documented, business-logic-driven imputation, not a blind fillna(0).
+9. Consistency check TotalCharges vs (MonthlyCharges x tenure): 381 customers (5.4%) differ by more than 10%. This is EXPECTED and not an error — MonthlyCharges reflects the *current* plan/rate, while TotalCharges accumulates historical billing that may include past promotions, plan changes, prorated first/last months, or add-on service changes over the customer's tenure. Documented, not treated as a data-quality defect. Median absolute % difference: 2.00%.
+10. Standardized categorical label whitespace/casing. Columns with detected fixes: 0.
+11. Logical consistency re-check after cleaning: PhoneService/MultipleLines mismatches = 0. Internet add-on vs InternetService mismatches = 0 (verified in Phase 1). No corrective action needed — dataset is internally consistent on these dimensions.
+12. Numeric range validation: All numeric ranges plausible (tenure 0-72 months, charges > 0).
+13. Outlier decision — MonthlyCharges: 0 values exceed the IQR upper fence (171.38). These are legitimate high-value customers (e.g., full fiber + all add-ons), not data errors. DECISION: retain as-is (no capping/removal); flagged via a 'HighMonthlyCharge' feature for downstream segmentation instead of being treated as noise.
+    Outlier decision — TotalCharges: 0 values exceed the IQR upper fence (8868.67); these correspond to long-tenure, high-paying loyal customers. DECISION: retain as-is — removing them would delete exactly the high-CLV customers most relevant to the business question.
+    tenure: distribution is naturally bounded (0-72); IQR method flags long-tenured customers as 'outliers' which is a false positive for a bounded/skewed-uniform variable. DECISION: no treatment applied to tenure.
+14. Dropped intermediate diagnostic columns (TotalCharges_expected/_diff/_pct_diff) after documenting the consistency check above; retained TotalCharges_raw_missing_flag as a permanent, useful indicator of originally-missing billing data.
+15. Cast 'tenure' and 'SeniorCitizen_Flag' to int for clean downstream typing.
+
+SUMMARY: 7043 rows -> 7043 rows (0 removed); 21 cols -> 23 cols (added SeniorCitizen_Flag, TotalCharges_raw_missing_flag).

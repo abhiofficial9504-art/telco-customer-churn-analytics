@@ -1,0 +1,20 @@
+Feature,Test Used,Test Statistic,Degrees of Freedom,p-value,Effect Size (Cramer's V),Effect Size Label,Significant (alpha=0.05),Interpretation
+Contract,Chi-square test of independence,1184.597,2,5.86e-258,0.41,Medium,Yes,Statistically significant association with Churn; medium effect size.
+tenure,Point-biserial correlation,-0.352,7041,8.00e-205,,Medium,Yes,Statistically significant negative correlation with Churn; medium effect size.
+OnlineSecurity,Chi-square test of independence,849.999,2,2.66e-185,0.347,Medium,Yes,Statistically significant association with Churn; medium effect size.
+TechSupport,Chi-square test of independence,828.197,2,1.44e-180,0.343,Medium,Yes,Statistically significant association with Churn; medium effect size.
+InternetService,Chi-square test of independence,732.31,2,9.57e-160,0.322,Medium,Yes,Statistically significant association with Churn; medium effect size.
+PaymentMethod,Chi-square test of independence,648.142,3,3.68e-140,0.303,Medium,Yes,Statistically significant association with Churn; medium effect size.
+OnlineBackup,Chi-square test of independence,601.813,2,2.08e-131,0.292,Small,Yes,Statistically significant association with Churn; small effect size.
+DeviceProtection,Chi-square test of independence,558.419,2,5.51e-122,0.281,Small,Yes,Statistically significant association with Churn; small effect size.
+StreamingMovies,Chi-square test of independence,375.661,2,2.67e-82,0.23,Small,Yes,Statistically significant association with Churn; small effect size.
+StreamingTV,Chi-square test of independence,374.204,2,5.53e-82,0.23,Small,Yes,Statistically significant association with Churn; small effect size.
+TotalCharges,Point-biserial correlation,-0.198,7041,2.13e-63,,Small,Yes,Statistically significant negative correlation with Churn; small effect size.
+MonthlyCharges,Point-biserial correlation,0.193,7041,2.71e-60,,Small,Yes,Statistically significant positive correlation with Churn; small effect size.
+PaperlessBilling,Chi-square test of independence,258.278,1,4.07e-58,0.191,Small,Yes,Statistically significant association with Churn; small effect size.
+Dependents,Chi-square test of independence,189.129,1,4.92e-43,0.163,Small,Yes,Statistically significant association with Churn; small effect size.
+SeniorCitizen,Chi-square test of independence,159.426,1,1.51e-36,0.15,Small,Yes,Statistically significant association with Churn; small effect size.
+Partner,Chi-square test of independence,158.733,1,2.14e-36,0.15,Small,Yes,Statistically significant association with Churn; small effect size.
+MultipleLines,Chi-square test of independence,11.33,2,0.0035,0.036,Negligible,Yes,Statistically significant association with Churn; negligible effect size.
+PhoneService,Chi-square test of independence,0.915,1,0.3388,0.0,Negligible,No,Not statistically significant association with Churn; negligible effect size.
+gender,Chi-square test of independence,0.484,1,0.4866,0.0,Negligible,No,Not statistically significant association with Churn; negligible effect size.

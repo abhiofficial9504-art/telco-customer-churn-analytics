@@ -1,0 +1,8 @@
+TenureGroup,Customer_Count,Churn_Count,Avg_MonthlyCharges,Avg_TotalCharges,Pct_MonthToMonth,Avg_NumberOfServices,Churn_Rate_%,Pct_of_Customer_Base_%,Pct_of_Total_Churn_%
+0-6 months,1481,784,54.74,142.57,95.4,2.72,52.94,21.03,41.95
+7-12 months,705,253,58.95,553.91,82.4,3.29,35.89,10.01,13.54
+13-24 months,1024,294,61.36,1126.26,72.0,3.64,28.71,14.54,15.73
+25-36 months,832,180,65.58,1990.2,58.4,4.15,21.63,11.81,9.63
+37-48 months,762,145,66.32,2827.47,41.5,4.46,19.03,10.82,7.76
+49-60 months,832,120,70.55,3848.13,28.1,4.89,14.42,11.81,6.42
+61+ months,1407,93,75.95,5180.67,7.7,5.83,6.61,19.98,4.98

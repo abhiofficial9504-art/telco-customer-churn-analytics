@@ -1,0 +1,4 @@
+Contract,Customer_Count,Churn_Rate_pct,Avg_MonthlyCharges,Avg_tenure
+Month-to-month,3875,42.71,66.4,18.04
+One year,1473,11.27,65.05,42.04
+Two year,1695,2.83,60.77,56.74

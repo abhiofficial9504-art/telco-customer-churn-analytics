@@ -1,0 +1,27 @@
+What is happening?
+Of 7,043 customers, 1,869 have churned — a 26.54% churn rate against a 73.46% retention rate. Churn is not evenly spread: it concentrates heavily in specific, identifiable segments rather than affecting the base uniformly.
+
+How serious is the churn problem?
+Serious and revenue-material. Churned customers carried $139,131 in monthly recurring revenue (30.5% of total MRR) — an estimated $1,669,570 in annualized revenue already lost. Churned customers had higher average MonthlyCharges than retained customers, meaning the business is disproportionately losing its more valuable-per-month accounts.
+
+Which customers are leaving?
+Overwhelmingly: month-to-month contract holders (42.71% churn rate, 3,875 customers), customers in their first 6 months of tenure (52.94% churn rate, contributing 41.95% of all churn), Fiber optic internet subscribers, and customers paying by electronic check. These factors compound — the single highest-risk identified profile (Month-to-month + Fiber optic + Electronic check) churns above 60%.
+
+Why are they likely leaving?
+The evidence points to a combination of low switching cost (flexible contracts with no exit penalty), a support/security gap (customers without Online Security or Tech Support churn at roughly 2.7x the rate of those with them), and a possible value-perception issue specific to the premium Fiber optic product line, which churns far above its DSL counterpart despite (or because of) higher pricing. Manual electronic-check billing further reduces the friction to leave.
+
+How much revenue is potentially at risk?
+$1,669,570 annualized has already been lost. Looking forward, the segments most exposed to further loss are Month-to-Month Risk Customers (churn rate 42.71%, $120,847/mo already lost of $257,294/mo total MRR exposure); Fiber-Optic High-Risk Customers (churn rate 54.61%, $100,482/mo already lost of $185,181/mo total MRR exposure); New High-Risk Customers (churn rate 51.35%, $68,301/mo already lost of $116,086/mo total MRR exposure).
+
+Which customer groups should we target first?
+In priority order (by dollar exposure): (1) Month-to-Month Risk Customers — the largest pool by far; (2) Fiber-Optic High-Risk Customers — highest churn rate combined with premium pricing; (3) New High-Risk Customers (tenure <=12mo on month-to-month) — the onboarding window where nearly half of all churn occurs; and (4) the smaller but high-value 'High-Value Churn Risk' segment, which justifies the richest per-customer retention offer given the revenue at stake per account.
+
+What are the top churn drivers?
+Combining statistical significance testing with machine-learning feature importance, the top ranked drivers are: Contract, tenure, TotalCharges, OnlineSecurity, InternetService. Contract type is the single strongest lever the business directly controls; tenure and TotalCharges reflect lifecycle stage; OnlineSecurity, InternetService and TechSupport point to a service-experience gap concentrated in fiber customers.
+
+What actions should the company take?
+Migrate month-to-month customers toward annual contracts with targeted incentives; bundle Online Security and Tech Support into new/at-risk sign-ups; investigate and address the Fiber optic-specific churn gap; push electronic-check payers toward automatic payment methods; and build a structured 90-day onboarding program to reduce first-6-month attrition. Full detail in the Recommendations section.
+
+What should management monitor going forward?
+A monthly churn-risk score (Random Forest model, 77% recall on the churn class, ROC-AUC 0.8449) should be tracked alongside: blended churn rate by contract-type mix (to catch structural shifts), revenue-at-risk (not just churn count), first-6-month cohort churn rate (an onboarding health metric), and the Fiber optic churn-rate gap versus DSL (to track whether service-quality interventions are working).
+

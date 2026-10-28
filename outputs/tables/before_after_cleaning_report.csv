@@ -1,0 +1,10 @@
+Metric,Before Cleaning,After Cleaning
+Rows,7043,7043
+Duplicate rows,0,0
+Duplicate customerIDs,0,0
+TotalCharges dtype,str,float64
+TotalCharges missing/blank,11,0
+tenure dtype,str,int64
+MonthlyCharges dtype,str,float64
+SeniorCitizen representation,"['0', '1']","['No', 'Yes']"
+Total missing values (all cols),0,0
